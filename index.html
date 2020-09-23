@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html>
+
+	 <head>
+
+		 <meta charset='utf-8'>
+		 <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+		 <meta name="facebook-domain-verification" content="m3v7cl97t57upowrwcc1ub73jcqvp4"/>
+		 <link rel="stylesheet" href="css/font-awesome/css/all.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		
+		    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css">-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+		 
+	 </head>
+
+	 <body>
+			<style>
+nav.navbar{
+	border-bottom: 0.125rem solid black;
+	margin-bottom: 1.3rem;
+	background:rgba(91,93,94, 0.1);
+	
+	
+}
+
+
+.active a,
+i.fa-search
+{
+	color: black !important;
+}
+
+.lineSmart{
+	background:#0020C2;
+}
+#footContainer{
+	height: 25vh;
+	background: rgba(91,93,94, 0.1);
+	border-top: 0.05rem solid black;
+	border-bottom:0.05rem solid black;
+	
+}
+
+#footContainer div{
+	width: 100%;
+	height: 100%;
+	margin-top: 3rem;
+	
+}
+
+#footContainer div h4{
+	font-size: 1.8rem;
+	font-family: 'Aclonica';
+}
+#footContainer div p{
+	font-size: 1.1rem;
+	font-family: 'Aclonica';
+}
+.iconTog.show{
+	color:#0020C2;
+
+}
+.show{
+	display: block;
+}
+@media screen and (max-width:780px){
+	.navbar-collapse li{
+		border-bottom: 0.05rem solid silver;
+	}
+	
+}
+@media screen and (min-width:1000px){
+	.view{
+		height:500px;
+		
+	}
+	
+}
+@media screen and (min-width:1000px){
+	.bottom-left{
+		font-size:70px;
+		
+	}
+	
+	
+}
+
+	
+</style>
+		 <nav class="navbar navbar-expand-lg navbar-light ">
+		 
+		<div class="container"> 
+  <a  class="navbar-brand"  style="font-size:22px;font-weight:bold;font-family: 'Aclonica';color:black;">PQ Solutions</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  onclick='chain()'>
+     <span  class="navbar-toggler-icon iconTog show"></span>
+	<span  class='iconTog'id='shown'></span>
+	
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto" style="font-size:16px;">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+	  <li class="nav-item dropdown" >
+	<a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#">Services</a>
+		<span class="caret"></span>
+		<div class="dropdown-menu" aria-labelledby="dropdown_target">
+		<a class="dropdown-item" href="application_dev.html">Software Development </a>
+		<div class="dropdown-divider"></div>
+		<a class="dropdown-item" href="IT_Support.html">IT support </a>
+		<div class="dropdown-divider"></div>
+		<a class="dropdown-item" href="network_support.html">Network support </a>
+		<div class="dropdown-divider"></div>
+		<a class="dropdown-item" href="hardware.html">Hardware Repair </a>
+		</div>
+	  </li>
+      
+	  <li class="nav-item">
+        <a class="nav-link" href="contact-us.html">Contact us</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+	  <li class="nav-item" class="last">
+        <a class="nav-link" href="team.html">Meet our Team</a>
+      </li>
+    </ul>
+   </div>
+  </div>
+</nav>
+
+
+<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+	<li data-target="#carousel-example-2" data-slide-to="3"></li>
+	<li data-target="#carousel-example-2" data-slide-to="4"></li>
+	<li data-target="#carousel-example-2" data-slide-to="5"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+  <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="images/15.jpg"
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <div class="view">
+        <img class="d-block w-100" src="images/10.jpeg"
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" >Application Development</h3>
+        <p class="animated bounce-1s" style="font-size:12px;">Mobile,desktop,web application and website design</p>
+		<a href="application_dev.html" class='btn btn-outline-primary' style="background:white;">Read More..</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="images/11.jpeg"
+          alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption" style="color:white;">
+        <h3 class="h3-responsive" style="color:white;font-size:29px;">Network Support</h3>
+        <p style="color:white;font-size:21px;">we setup and mantain network for you</p>
+		<a href="network_support.html" class='btn btn-outline-primary' style="background:white;">Read More..</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="images/16.jpeg"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption" >
+        <h3 class="h3-responsive" style="color:white;font-size:32px;">Hardware Repair</h3>
+        <p style="font-size:23px;">We mantain and repair your hardware</p>
+		<a href="hardware.html" class='btn btn-outline-primary' style="background:white;">Read More..</a>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="images/17.jpeg"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption" >
+        <h3 class="h3-responsive" style="color:white;font-size:37px;">IT Support</h3>
+        <p style="font-weight:bold;font-size:20px;">We offer telephone and on-site system support</p>
+		<a href="IT_Support.html" class='btn btn-outline-primary' style="background:white;">Read More..</a>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="images/2.jpeg"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption" >
+        <h3 class="h3-responsive" style="color:white;font-size:29px;">3D Logo Design & Bussiness Cards Creation</h3>
+        <p style="font-size:23px;"></p>
+		<a href="hardware.html" class='btn btn-outline-primary' style="background:white;">Read More..</a>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+
+<br>
+
+ <div class='container-fluid'>
+
+			 <div class='row'>
+
+				 <div class='col-md-1'>
+				 </div>
+
+				 <div class='col-md-10'>
+
+					 <div class="container">
+                         <div class="jumbotron" style='background: rgba(91,93,94, 0.05);text-align:center;'>
+                         
+						 
+							
+							
+                         <p class="animated bounceInDown slower">"Quality in a service or product is not what you put into it.It's what the client or customer
+						 gets out of it."
+						 </p>
+
+						
+                         </div>
+                     </div>
+
+					
+				 </div>
+
+				
+			 </div>
+		 </div>
+		  <div class='container-fluid'>
+
+			 <div class='row'>
+
+				 <div class='col-md-1'>
+				 </div>
+
+				 <div class='col-md-10'>
+
+					 <div class="container">
+                         <div class="jumbotron" style='background: black;color:white;text-align:left;font-family: 'Aclonica';font-size:19px;'>
+                         
+						 
+						<h2>Our Vision</h2>
+							
+                         <p class="animated slideInUp">To provide IT Solutions to small businesses all the way up to large enterprises at an affordable fee.<br><br> Unlike most IT companies 
+							our mission statement is to ensure that our relationship with our clients is stronger by offering quality services and by an going extra mile 
+							so our clients are satisfied with our services.<br><br> Also we try by all means to ease day-to-day business operations of our clients by introducing new Technological Innovations
+							and training their employees in business process model we established for them.
+						 </p>
+
+						
+                         </div>
+                     </div>
+
+					
+				 </div>
+
+				
+			 </div>
+		 </div>
+
+  <!-- Left and right controls -->
+
+
+
+	<!--
+	<div class="slider">
+		<div class="sliderchild">
+		<div class="imagecon">hello<img src="images/1.jpeg" alt="" width="100%" ></div>
+		<div class="imagecon"><img src="images/2.png" alt="" width="100%">Hi</div>
+		<div class="imagecon"><img src="images/3.jpeg" alt="" width="100%" >my</div>
+		<div class="imagecon"><img src="images/4.jpeg" alt="" width="100%">sweet</div>
+		<div class="imagecon"><img src="images/1.jpeg" alt="" width="100%">heart</div>
+		</div>
+	</div>
+	
+	<div  id="slider">
+	<figure>
+	
+	<img src="images/1.jpeg" alt="" >
+	
+	
+	<img src="images/2.png" alt="" >
+	
+	<img src="images/3.jpeg" alt="" >
+	
+	<img src="images/4.jpeg" alt="" >
+	
+	<img src="images/1.jpeg" alt="" >
+	
+	</figure>
+	</div> 
+		
+	<!--
+		<div class="slideshow">
+			<div class="slideshow-item">
+			<img src="images/logo.jpg" alt="" >
+				<h5>welcome</h5>
+				<p>Hello<br>
+				<a href="#">Read more<a/>
+				</p>
+			</div>
+			-->
+			
+			
+			
+			
+		
+			
+		
+		
+
+		 <!-- Jnotron -->
+		<!--
+		 <div class='container-fluid'>
+
+			 <div class='row'>
+
+				 <div class='col-md-1'>
+				 </div>
+
+				 <div class='col-md-10'>
+
+					 <div class="container">
+                         <div class="jumbotron" style='background: rgba(91,93,94, 0.05);'>
+                         <h5 style="color:#0020C2;text-align:center;">Welcome to (PQ) Solutions</h5>
+						 <h6 style="color:black;text-align:center;">(Progressive Quality Solutions)</h6>
+							
+							
+                         <p style="text-align:center;">Affordable Technology and IT Solutions company that delivers progressive and quality services and help you 
+							digitize your business and mantains your software and hardware.
+						 </p>
+							<!--
+						 <center>
+						     <hr>
+							 <p>Follow us on these online platforms</p>
+							 <div id='conPart'>
+
+								 <i class="fab fa-facebook"></i>
+								 <i class="fab fa-twitter"></i>
+								 <i class="fab fa-instagram"></i>
+								
+							 </div>
+						 </center>
+                         </div>
+                     </div>
+
+					 
+				 </div>
+
+				 <div class='col-md-1'>
+				 </div>
+			 </div>
+		 </div>
+		
+		
+		 <div class='container-fluid'>
+		 <div class='row'>
+			      <div class='col-md-2'>
+				  </div>
+				  <div class='col-md-8'>
+			
+			<img style="text-align:center;" src='images/logo.jpg' width="100%" > 
+
+		</div>
+		</div>
+		</div>
+			-->			
+
+			
+		 
+	
+		 <!--Latest Feeds Taken from the latest posts from post.php-->
+
+		 
+
+		
+		 
+		 
+
+
+				
+						
+
+						
+
+					
+					
+		 <footer>
+
+			 <div class='container-fluid'>
+
+				 <div class='row'>
+
+					 <div class='col-md-1'>
+					 </div>
+
+					 <div class='col-md-10' id='footContainer'>
+
+						 <div>
+						     <center>
+							<div id='conPart'>
+
+								 <a href="https://www.facebook.com/103064848097821"><i class="fab fa-facebook"></i></a>
+								 <a href="https://twitter.com/PQ_Solutions?s=08"><i class="fab fa-twitter"></i></a>
+								 <a href=" https://instagram.com/pq_solutions?igshid=14886sxcg0oxo"><i class="fab fa-instagram"></i></a>
+								
+							 </div>
+						    
+
+							 <p>Copyrights &copy; 2020 PQ Solutions || All rights reserved</p>
+							 </center>
+						 </div>
+					 </div>
+
+					 <div class='col-md-1'>
+					 </div>
+				 </div>
+			 </div>
+		 </footer>
+		 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		
+		 
+		
+
+		 <script>
+
+			 var arr = document.getElementsByClassName('slideWrap');
+			 function changeLeft(){
+
+
+
+				 if(arr[0].classList.contains('onScreen')){
+
+					 $('#one').animate({left: '-100%'}, 3000);
+					 $('#two').animate({left: '0'}, 3000, function(){
+						 arr[0].classList.remove('onScreen');
+						 arr[1].classList.add('onScreen');
+					 });
+
+					 document.getElementsByClassName('fa-circle')[0].classList.remove('slideActive');
+					 document.getElementsByClassName('fa-circle')[1].classList.add('slideActive');
+				 }
+			 }
+
+			 function changeRight(){
+
+				 if(arr[1].classList.contains('onScreen')){
+					 $('#one').animate({left: '0%'}, 3000);
+					 $('#two').animate({left: '100%'}, 3000, function(){
+						 arr[1].classList.remove('onScreen');
+						 arr[0].classList.add('onScreen');
+					 });
+				 }
+				 document.getElementsByClassName('fa-circle')[1].classList.remove('slideActive');
+				 document.getElementsByClassName('fa-circle')[0].classList.add('slideActive');
+
+			 }
+
+
+			 function changeColLeft(){
+				 if(arr[1].classList.contains('onScreen')){
+					 $('#one').animate({left: '0%'}, 3000);
+					 $('#two').animate({left: '100%'}, 3000, function(){
+						 arr[1].classList.remove('onScreen');
+						 arr[0].classList.add('onScreen');
+					 });
+
+				 }
+
+				 document.getElementsByClassName('fa-circle')[0].classList.remove('slideActive');
+					 document.getElementsByClassName('fa-circle')[1].classList.add('slideActive');
+			 }
+
+			 function changeColRight(){
+				 if(arr[0].classList.contains('onScreen')){
+
+					 $('#one').animate({left: '-100%'}, 3000);
+					 $('#two').animate({left: '0'}, 3000, function(){
+						 arr[0].classList.remove('onScreen');
+						 arr[1].classList.add('onScreen');
+					 });
+
+
+				 }
+
+				 document.getElementsByClassName('fa-circle')[1].classList.remove('slideActive');
+					 document.getElementsByClassName('fa-circle')[0].classList.add('slideActive');
+			 }
+
+
+
+if(document.getElementById('navbarSupportedContent').style.display === 'block'){
+
+	document.getElementById('shown').style.display = 'block';
+}
+
+
+function chain(){
+
+	var icon1 = document.getElementsByClassName('iconTog')[0];
+	var icon2 = document.getElementsByClassName('iconTog')[1];
+
+	if(icon1.classList.contains('show')){
+
+
+		document.getElementsByClassName('iconTog')[0].style.display = 'block';
+		icon1.classList.remove('show');
+		icon2.classList.add('show');
+		document.getElementById('navbarSupportedContent').style.display = 'block';
+
+		document.getElementById('navbarSupportedContente').style.background = 'grey';
+		//document.getElementById('shown').style.display = 'block';
+	}
+
+	else{
+		document.getElementsByClassName('iconTog')[0].style.display = 'block';
+		icon1.classList.add('show');
+		icon2.classList.remove('show');
+		document.getElementById('navbarSupportedContent').style.display = 'none';
+		document.getElementById('navbarSupportedContent').style.background = 'initial';
+		//document.getElementById('shown').style.display = 'none';
+	}
+
+
+
+}
+		 </script>
+	 </body>
+</html>
